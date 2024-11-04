@@ -1,0 +1,226 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Ryze</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Hechicero Rúnico</h1>
+            <h2>Ryze</h2>
+            <p class="description">Ryze es considerado uno de los hechiceros con más experiencia de Runaterra. El archimago ancestral y gruñón lleva sobre sus hombros una pesada carga. Con su constitución sin límites y su inmenso poder arcano, Ryze se pasa la vida buscando incansablemente Runas Geogénicas por el mundo, fragmentos de magia pura que antaño crearon el mundo de la nada. Ryze debe encontrar esos artefactos antes de que caigan en las manos equivocadas, porque sabe que, si fueron usados para crear Runaterra, también tienen el potencial de destruirla.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qlzIm4Zcv7ZPUlpgWKBPYhJq7yi2ray0oQ&s" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e6b174c92f96fb06842f4aac2e417d0e27707c27-496x560.jpg?auto=format&fit=fill&q=80&w=427" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+
+    <Habilidades 
+    img1 = "../Ryze/P.png"
+    img2 = "../Ryze/Q.png"
+    img3 = "../Ryze/W.png"
+    img4 = "../Ryze/E.png"
+    img5 = "../Ryze/R.png"
+    video1 = "../Ryze/P.mp4"
+    video2 = "../Ryze/Q.mp4"
+    video3 = "../Ryze/W.mp4"
+    video4 = "../Ryze/E.mp4"
+    video5 = "../Ryze/R.mp4"
+    descripcion1 ="Los hechizos de Ryze infligen daño adicional según su maná adicional. Además, obtiene un porcentaje que se añade a su maná máximo según su poder de habilidad."
+    descripcion2 = "De forma pasiva, las demás habilidades básicas de Ryze reinician el enfriamiento de Descarga eléctrica y cargan una runa. Si Ryze lanza Descarga eléctrica con dos runas cargadas, obtiene un aumento de velocidad de movimiento durante un breve periodo. Con el lanzamiento, Ryze libera una carga de energía pura en línea recta que daña al primer enemigo al que alcanza. Si el objetivo está marcado con Flujo, Descarga eléctrica infligirá daño adicional y rebotará en los enemigos cercanos que también tengan una marca de Flujo."
+    descripcion3 = "Ryze atrapa a una unidad enemiga objetivo en una prisión de runas que le inflige daño y lo ralentiza. Si el objetivo está marcado con Flujo, quedará inmovilizado."
+    descripcion4 ="Ryze lanza un orbe de poder mágico puro que daña a un enemigo y debilita a los demás que estén cerca. Los hechizos de Ryze tienen efectos adicionales contra enemigos debilitados."
+    descripcion5 = "De forma pasiva, Descarga eléctrica inflige más daño a los objetivos marcados con Flujo. Con el lanzamiento, Ryze crea un portal a una ubicación cercana. Tras unos segundos, los aliados que estén dentro del portal se teleportan a la ubicación objetivo."
+    nomb1="MAESTRÍA ARCANA (Pasiva)"
+    nomb2="IDESCARGA ELÉCTRICA (Q)"
+    nomb3="PRISIÓN RÚNICA (W)"
+    nomb4="TORMENTA ELÉCTRICA (E)"
+    nomb5="DISTORSIÓN DE REÍNOS (R)">
+    </Habilidades>
+
+</body>
+</html>

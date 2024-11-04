@@ -1,0 +1,244 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="League of Legends Champions">
+	<main>
+		<section class="hero">
+			<h2>Bienvenido a League Of Legends</h2>
+			<h1>¿Cómo quieres jugar?</h1>
+			<p>Ya sea que prefieras lanzarte directo a la batalla, apoyar a tus compañeros de equipo, o algo intermedio, hay un lugar para ti en la Grieta.</p>
+			<div class="buttons">
+				<a href="https://www.leagueoflegends.com/es-es/champions/" class="btn gold">DESCUBRIR MÁS CAMPEONES</a>
+				<a href="https://www.leagueoflegends.com/es-mx/download/" class="btn blue">JUEGA AHORA</a>
+			</div>
+		</section>
+
+		<section class="categories">
+			<div class="category">
+				<img src="https://pm1.aminoapps.com/6315/81081e2b790a64d77204d524f6839743bc053861_hq.jpg" alt="Asesinos" />
+				<span>ASESINOS</span>
+			</div>
+			<div class="category">
+				<img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/profileicon/658.png" alt="Luchadores" />
+				<span>LUCHADORES</span>
+			</div>
+			<div class="category">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qlzIm4Zcv7ZPUlpgWKBPYhJq7yi2ray0oQ&s" alt="Magos" />
+				<span>MAGOS</span>
+			</div>
+			<div class="category">
+				<img src="https://i.pinimg.com/originals/f2/56/65/f25665d9bd979b1c05da04a59fb7d8a7.png" alt="Tiradores" />
+				<span>TIRADORES</span>
+			</div>
+			<div class="category">
+				<img src="https://i.pinimg.com/236x/84/a2/b5/84a2b5ce34cb29d700828287d9048753.jpg" alt="Soportes" />
+				<span>SOPORTES</span>
+			</div>
+			<div class="category">
+				<img src="https://pbs.twimg.com/profile_images/1124662429819047938/MY7CkPOI_400x400.png" alt="Tanques" />
+				<span>TANQUES</span>
+			</div>
+		</section>
+
+		<section class="champions">
+			<a href="Zed" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/790ff0f287533f90d2d02132c15f54fb85394fdc-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Zed" />
+				<p>Zed</p>
+			</a>
+			<a href="/Lee_Sin" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ce638264ec40c028d3355852192d8feeb969880e-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Lee Sin" />
+				<p>Lee Sin</p>
+			</a>
+			<a href="/Ryze" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e6b174c92f96fb06842f4aac2e417d0e27707c27-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Ryze" />
+				<p>Ryze</p>
+			</a>
+			<a href="/Jhin" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c7bcc3ab59371041a1035c0447fba1b4d3253d9e-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Jhin" />
+				<p>Jhin</p>
+			</a>
+			<a href="/Soraka" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8a422facc9a83803afca14623ec9da507e07ee35-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Soraka" />
+				<p>Soraka</p>
+			</a>
+			<a href="/Sion" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/523fbe02a6445674f3c7f8895e7433ede0e7fbdf-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
+				<p>Sion</p>
+			</a>
+			<a href="/Nasus" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7ad20e92d0da55bcf2fca1a342774841bfa65383-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
+				<p>Nasus</p>
+			</a>
+			<a href="/Miss" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fb6f4d62835fa6e7ba97055baab49408c8c89273-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
+				<p>Miss Fortune</p>
+			</a>
+			<a href="/Galio" class="champion-card">
+				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/28f2a8ca2e4422674275c5e2d077d6cb4f143d0c-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
+				<p>Galio</p>
+			</a>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	/* Estilo general */
+	main {
+		padding: 2rem;
+		color: #FFFFFF;
+		font-family: Arial, sans-serif;
+		background-color: rgba(10, 20, 40, 255);
+	}
+
+	/* Hero Section */
+	.hero {
+		text-align: center;
+		margin-bottom: 2rem;
+		background-image: url('https://wallpapers.com/images/hd/1920x1080-league-of-legends-background-1920-x-1080-fyaii5aos2zulooq.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 6rem 0;
+		position: relative;
+		color: white;
+	}
+
+	.hero::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 1;
+	}
+
+	.hero h1,
+	.hero h2,
+	.hero p,
+	.buttons {
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero h2 {
+		font-size: 2.5rem;
+		color: #c8aa6efe;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+		margin-bottom: 1rem;
+	}
+
+	.hero h1 {
+		font-size: 4.5rem;
+		color: #c8aa6efe;
+		text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+		margin-bottom: 1.5rem;
+	}
+
+	.hero p {
+		margin: 2rem 0;
+		font-size: 1.2rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		color: #f0f0f0;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+	}
+
+	/* Botones */
+	.buttons {
+		margin: 2.5rem 0;
+	}
+
+	.buttons .btn {
+		padding: 1rem 2.5rem;
+		border-radius: 8px;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0 1rem;
+		transition: background-color 0.3s ease, transform 0.3s ease;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	}
+
+	.btn.gold {
+		background-color: #c59c42;
+		color: white;
+	}
+
+	.btn.blue {
+		background-color: #1e90ff;
+		color: white;
+	}
+
+	.btn:hover {
+		opacity: 0.9;
+		transform: translateY(-3px);
+	}
+
+	/* Categorías */
+	.categories {
+		display: flex;
+		justify-content: space-around;
+		margin: 2rem 0;
+	}
+
+	.category {
+		text-align: center;
+	}
+
+	.category img {
+		width: 50px;
+	}
+
+	.category span {
+		display: block;
+		margin-top: 0.5rem;
+		font-weight: bold;
+		color: #f0f0f0;
+		font-size: 1rem;
+	}
+
+	/* Cartas de campeones */
+	.champions {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+	}
+
+	.champion-card {
+		text-align: center;
+		border-radius: 10px;
+		background-color: #1e2a3a;
+		padding: 1rem;
+		color: white;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		text-decoration: none;
+	}
+
+	.champion-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	}
+
+	.champion-card img {
+		width: 100%;
+		height: auto;
+		max-width: 350px;
+		max-height: 400px;
+		object-fit: cover;
+		border-radius: 5px;
+	}
+
+	.champion-card p {
+		margin-top: 0.5rem;
+		font-weight: bold;
+		font-size: 1.1rem;
+		color: white;
+	}
+</style>
+
+
+
+

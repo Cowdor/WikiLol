@@ -1,0 +1,181 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Jhin</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Virtuoso</h1>
+            <h2>Jhin</h2>
+            <p class="description">Soraka, una nómada proveniente de las dimensiones celestiales más allá del monte Targon, dejó a un lado su inmortalidad para proteger a las razas mortales de sus propios instintos asesinos. Su cometido es difundir las virtudes de la compasión y la misericordia entre todos los seres con los que se cruza, e incluso sanar a aquellos que desean hacerle daño. Pese a los problemas que ha presenciado Soraka hasta la fecha, sigue creyendo firmemente que los pueblos de Runaterra no han alcanzado todo su potencial.</p>
+            
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://i.pinimg.com/originals/f2/56/65/f25665d9bd979b1c05da04a59fb7d8a7.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c7bcc3ab59371041a1035c0447fba1b4d3253d9e-496x560.jpg?auto=format&fit=fill&q=80&w=427" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    descripcion = "Esto es Susurro" 
+    img1 = "../Jhin/Jhin_P.png"
+    img2 = "../Jhin/JhinQ.png"
+    img3 = "../Jhin/JhinW.png"
+    img4 = "../Jhin/JhinE.png"
+    img5 = "../Jhin/JhinR.png"
+    video1 = "../Jhin/Susurro.mp4"
+    video2 = "../Jhin/Q.mp4"
+    video3 = "../Jhin/W.mp4"
+    video4 = "../Jhin/E.mp4"
+    video5 = "../Jhin/R.mp4"
+    descripcion1 ="Susurro, el cañón de mano de Jhin, es un instrumento preciso diseñado para infligir un gran daño. Dispara con una cadencia fija y solo puede portar cuatro balas. Jhin baña la última bala con magia oscura para asestar impactos críticos e infligir daño de ejecución adicional. Siempre que Susurro asesta un impacto crítico, Jhin obtiene un aumento de velocidad de movimiento. "
+    descripcion2 = "Jhin lanza un cartucho mágico a un enemigo. Podrá impactar a un máximo de cuatro objetivos y cada vez que mata suma daño"
+    descripcion3 = "Jhin blande su bastón y dispara un proyectil con un alcance increíble. Atraviesa a los súbditos y los monstruos, pero se detiene en el primer campeón impactado. El objetivo queda inmovilizado si ha sido víctima de los ataques de los aliados de Jhin, de las trampas de loto o del daño de Jhin."
+    descripcion4 ="Jhin coloca una trampa de loto invisible que florece al pasar sobre ella. Ralentiza a los enemigos cercanos antes de infligir daño con una explosión de pétalos serrados. Belleza en la muerte: Cuando Jhin mate a un campeón enemigo, florecerá una trampa de loto junto a su cadáver."
+    descripcion5 = "Jhin concentra su energía y transforma Susurro en un megacañón de hombro capaz de realizar 4 superdisparos de gran alcance, que atraviesan a los súbditos y a los monstruos pero se detienen en el primer campeón impactado. Susurro incapacita a los enemigos impactados, los ralentiza e inflige daño de ejecución. El cuarto disparo se prepara con sumo cuidado, tiene una potencia épica y garantiza un impacto crítico"
+    nomb1="SUSURRO (Pasiva)"
+    nomb2="GRANADA DANZANTE (Q)"
+    nomb3="FLORECER MORTAL (W)"
+    nomb4="PÚBLICO ENTREGGADO (E)"
+    nomb5="ABAJO EL TELÓN (R)">
+    </Habilidades>
+
+</body>
+</html>

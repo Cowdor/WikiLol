@@ -1,0 +1,253 @@
+---
+const {nomb1, nomb2, nomb3, nomb4, nomb5, descripcion1, descripcion2, descripcion3, descripcion4, descripcion5, video1, video2, video3, video4, video5, img1, img2, img3, img4, img5} = Astro.props
+---
+
+<style>
+  /* Tu CSS permanece igual */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ffffff;
+  }
+
+  h1 {
+      font-size: 3rem;
+      color: #ffd700;
+      margin-bottom: 10px;
+  }
+
+  .description {
+      line-height: 1.5;
+      font-size: 1.3rem;
+  }
+
+  .info-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      align-items: center;
+  }
+
+  .info-icons .icon-box {
+      text-align: center;
+      margin: 0 50px;
+  }
+
+  .info-icons img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .info-icons p {
+      margin-top: 10px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #f0f0f0;
+  }
+
+  /* Habilidades */
+  .abilities-section {
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      padding: 30px;
+      background-color: rgba(10, 20, 40, 255);
+      border-radius: 15px;
+      text-align: center;
+  }
+
+  .ability-container-video{
+      display: flex;
+      padding: 30px;
+      justify-content: space-between;
+ 
+  }
+
+  .ability-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .ability {
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+  }
+
+  .ability img {
+  /*Centrar las imagenes*/    
+      display: block;
+      margin: 0 auto;
+  }
+
+  .ability-details {
+      flex-grow: 1;
+  }
+
+  .ability-details h3 {
+      font-size: 1.3rem;
+      color: #ffd700;
+
+  }
+
+  .ability-details p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #f0f0f0;
+  }
+
+  #descripcion {
+      line-height: 1.2;
+      width: 300px;
+  }
+  
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .left-content {
+          width: 100%;
+      }
+
+      .right-image {
+          width: 100%;
+      }
+
+      .right-image img {
+          max-width: 80%;
+          margin-top: 20px;
+      }
+
+      .ability {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .ability img {
+          margin-bottom: 10px;
+      }
+
+      .video {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .video video {
+          width: 400px;
+          height: auto;
+      }
+
+      .video p {
+          color: white;
+          font-size: 18px;
+          margin-top: 10px;
+          text-align: center;
+      }
+  }
+</style>  
+
+
+<!-- Sección de Habilidades -->
+<div class="abilities-section">
+  <h1>HABILIDADES</h1>
+
+  <div class="ability-container">
+      <div class="ability">
+          <img src={img1} alt="Susurro">
+          <div class="ability-details">
+              <h3>{nomb1}</h3>
+          </div>
+      </div>
+
+      <div class="ability">
+          <img src={img2} alt="Granada danzante">
+          <div class="ability-details">
+              <h3>{nomb2}</h3>
+          </div>
+      </div>
+
+      <div class="ability">
+          <img src={img3} alt="Florecer mortal">
+          <div class="ability-details">
+              <h3>{nomb3}</h3>
+          </div>
+      </div>
+
+      <div class="ability">
+          <img src={img4} alt="Público entregado">
+          <div class="ability-details">
+              <h3>{nomb4}</h3>
+          </div>
+      </div>
+
+      <div class="ability">
+          <img src={img5} alt="Abajo el telón">
+          <div class="ability-details">
+              <h3>{nomb5}</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="ability-container-video">
+      <div class="video">
+          <video id="videoDisplay" autoplay loop muted width="300" height="300">
+              <source src={video1} type="video/mp4" >
+          </video>
+          <p id="descripcion">{descripcion1}</p>
+      </div>
+
+      <div class="video">
+          <video id="videoDisplay" autoplay loop muted width="300" height="300">
+              <source src={video2}  type="video/mp4" >
+          </video>
+          <p id="descripcion">{descripcion2}</p>
+      </div>
+
+      <div class="video">
+          <video id="videoDisplay" autoplay loop muted width="300" height="300">
+              <source src={video3}  type="video/mp4" >
+          </video>
+          <p id="descripcion">{descripcion3}</p>
+      </div>
+
+      <div class="video">
+          <video id="videoDisplay" autoplay loop muted width="300" height="300">
+              <source src={video4}  type="video/mp4" >
+          </video>
+          <p id="descripcion">{descripcion4}</p>
+      </div>
+
+      <div class="video">
+          <video id="videoDisplay" autoplay loop muted width="300" height="300">
+              <source src={video5}  type="video/mp4" >
+          </video>
+          <p id="descripcion">{descripcion5}</p>
+      </div>
+  </div>
+
+
+
+  

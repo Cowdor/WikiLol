@@ -1,0 +1,225 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Sion</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Coloso no Muerto</h1>
+            <h2>Sion</h2>
+            <p class="description">Sion fue un héroe de guerra en el pasado y los noxianos lo veneraban porque había arrebatado la vida de un rey demaciano con sus simples manos. No obstante, se le denegó su viaje al más allá, pues fue revivido para servir a su imperio incluso después de muerto. Sus masacres indiscriminadas se sucedieron contra todos aquellos que se interpusieran en su camino, sin importar su facción, lo que demostró que ya no quedaba ni rastro de humanidad en su interior. Pese a todo, Sion lucha desenfrenadamente provisto únicamente de una armadura remachada a su piel putrefacta, pugnando por recordar su verdadero yo entre hachazo y hachazo.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://pbs.twimg.com/profile_images/1124662429819047938/MY7CkPOI_400x400.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/523fbe02a6445674f3c7f8895e7433ede0e7fbdf-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Sion/P.png"
+    img2 = "../Sion/Q.png"
+    img3 = "../Sion/W.png"
+    img4 = "../Sion/E.png"
+    img5 = "../Sion/R.png"
+    video1 = "../Sion/P.mp4"
+    video2 = "../Sion/Q.mp4"
+    video3 = "../Sion/W.mp4"
+    video4 = "../Sion/E.mp4"
+    video5 = "../Sion/R.mp4"
+    descripcion1 ="Después de morir, Sion se reanima temporalmente, pero su vida se reduce rápidamente. Sus ataques son muy rápidos y lo curan, además de infligir daño adicional según la vida máxima del objetivo."
+    descripcion2 = "Sion carga un poderoso ataque que, una vez liberado, daña a los enemigos situados frente a él. Si lo carga durante el tiempo suficiente, los enemigos alcanzados también salen lanzados por los aires y quedan aturdidos."
+    descripcion3 = "Sion se protege con un escudo y al cabo de 3 s puede reactivarse para infligir daño mágico a los enemigos cercanos. Cuando Sion asesina a algún enemigo, aumenta de manera pasiva su vida máxima."
+    descripcion4 ="Sion lanza una onda de choque de corto alcance que daña y ralentiza al primer enemigo alcanzado, además de reducir su armadura. Si se trata de un súbdito o un monstruo, saldrá despedido hacia atrás. Los enemigos a los que alcance resultarán dañados, sufrirán una ralentización y verán reducida su armadura."
+    descripcion5 = "Sion se lanza a la carga a velocidad creciente. Puede cambiar ligeramente de dirección usando el cursor del ratón. Los enemigos a los que embiste resultan derribados y dañados en función de la distancia de la carga."
+    nomb1="GLORIA EN LA MUERTE (Pasiva)"
+    nomb2="IMPACTO ANIQUILADOR (Q)"
+    nomb3="HORNO DEL ALMA (W)"
+    nomb4="RUGIDO DEL ASESINO (E)"
+    nomb5="EMBESTIDA IMPARABLE (R)">
+    </Habilidades>
+
+</body>
+</html>

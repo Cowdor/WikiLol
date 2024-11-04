@@ -1,0 +1,228 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Soraka</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Coloso</h1>
+            <h2>Galio</h2>
+            <p class="description">Fuera de la reluciente ciudad de Demacia, el coloso de piedra Galio se mantiene vigilante. Construido como un baluarte contra los magos enemigos, 
+                suele permanecer inmóvil durante décadas hasta que la presencia de magia poderosa lo vuelve a traer a la vida. Una vez activado, Galio aprovecha al máximo su tiempo, 
+                y saborea el placer del combate y el raro honor de defender a sus compatriotas. Pero estos triunfos siempre son agridulces, ya que la magia que destruye también es su 
+                fuente de reanimación, y cada victoria lo vuelve a dormir.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://i.pinimg.com/236x/84/a2/b5/84a2b5ce34cb29d700828287d9048753.jpg" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/2.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/28f2a8ca2e4422674275c5e2d077d6cb4f143d0c-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Galio/P.png"
+    img2 = "../Galio/Q.png" 
+    img3 = "../Galio/W.png"
+    img4 = "../Galio/E.png"                     
+    img5 = "../Galio/R.png"
+    video1 = "../Galio/P.mp4"                                           
+    video2 = "../Galio/Q.mp4"                                   
+    video3 = "../Galio/W.mp4"
+    video4 = "../Galio/E.mp4"
+    video5 = "../Galio/R.mp4"
+    descripcion1 ="Cada pocos segundos, el siguiente ataque básico de Galio inflige daño mágico adicional en un área."
+    descripcion2 = "Galio lanza dos remolinos de viento que se unen y convierten en un gran tornado que inflige daño prolongado."
+    descripcion3 = "Galio carga en posición defensiva y se mueve lentamente. Tras liberar la carga, Galio provocará y dañará a los enemigos cercanos."
+    descripcion4 ="Galio dará un pequeño paso hacia atrás, cargará hacia delante y aturdirá al primer enemigo que se encuentre en su camino."
+    descripcion5 = "Galio designa la ubicación de un campeón aliado como punto de aterrizaje y otorga un escudo mágico a todos los aliados en la zona. Tras un breve lapso de tiempo, Galio aterriza en la ubicación y lanza a los enemigos cercanos por los aires."
+    nomb1="APLASTAMIENTO COLOSAL (Pasiva)"
+    nomb2="VIENTOS DE GUERRA (Q)"
+    nomb3="ESCUDO DE DURAND (W)"
+    nomb4="PUÑETAZO JUSTICIERO (E)"
+    nomb5="ENTRADA HEROICA (R)">
+    </Habilidades>
+
+</body>
+</html>

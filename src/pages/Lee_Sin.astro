@@ -1,0 +1,226 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Lee Sin</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Monje Ciego</h1>
+            <h2>Lee Sin</h2>
+            <p class="description">Lee Sin, maestro de las artes marciales ancestrales de Jonia, es un luchador con principios que canaliza la esencia del espíritu del dragón para enfrentarse a cualquier desafío. Aunque perdió la vista hace muchos años, el monje guerrero ha dedicado su vida a proteger su hogar contra cualquiera que se atreva a alterar su sagrado equilibrio. Los enemigos que subestiman su actitud meditativa tendrán que vérselas con sus legendarios puños ardientes y sus fulgurantes patadas giratorias.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/profileicon/658.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ce638264ec40c028d3355852192d8feeb969880e-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+
+    <Habilidades 
+    img1 = "../Lee Sin/P.png"
+    img2 = "../Lee Sin/Q.png"
+    img3 = "../Lee Sin/W.png"
+    img4 = "../Lee Sin/E.png"
+    img5 = "../Lee Sin/R.png"
+    video1 = "../Lee Sin/P.mp4"
+    video2 = "../Lee Sin/Q.mp4"
+    video3 = "../Lee Sin/W.mp4"
+    video4 = "../Lee Sin/E.mp4"
+    video5 = "../Lee Sin/R.mp4"
+    descripcion1 ="Después de que Lee Sin use una habilidad, sus 2 ataques básicos siguientes reciben velocidad de ataque y restauran energía"
+    descripcion2 = "Onda sónica: Lee Sin emite una onda sonora discordante para localizar a sus enemigos e inflige daño físico al que detecta primero. Si Onda sónica golpea, Lee Sin dispone de 3 s para lanzar Golpe resonante. Golpe resonante: Lee Sin se abalanza sobre el enemigo golpeado por Onda sónica y le causa daño físico según la vida que le falte al objetivo."
+    descripcion3 = "Salvaguarda: Lee Sin salta sobre un aliado de su elección y genera un escudo que lo protege del daño. Si el aliado es un campeón, también lo escuda. Tras utilizar Salvaguarda, Lee Sin puede usar Voluntad de hierro. Voluntad de hierro: El intenso entrenamiento de Lee Sin le permite crecerse en la batalla. Lee Sin obtiene robo de vida y succión de hechizo."
+    descripcion4 ="Tempestad: Lee Sin golpea el suelo y provoca una onda de choque que inflige daño mágico y revela a los enemigos alcanzados. Si Tempestad golpea a un enemigo, Lee Sin puede usar Incapacitar. Incapacitar: Lee Sin incapacita a los enemigos cercanos dañados por Tempestad y reduce su velocidad de movimiento. La velocidad de movimiento se recupera gradualmente."
+    descripcion5 = "Lee Sin realiza una potente patada giratoria, que lanza hacia atrás al objetivo e inflige daño físico a él y a todos los enemigos con los que impacte. Estos últimos salen por los aires durante un breve tiempo. Esta técnica se la enseñó Jesse Perring, aunque Lee Sin no patea a los jugadores fuera del mapa."
+    nomb1="RÁFAGA (Pasiva)"
+    nomb2="ONDA SÓNICA / GOLPE RESONANTE (Q)"
+    nomb3="SALVAGUARDA / VOLUNTAD DE HIERRO (W)"
+    nomb4="TEMPESTAD / INCAPACITAR (E)"
+    nomb5="IRA DEL DRAGÓN (R)">
+    </Habilidades>
+
+</body>
+</html>

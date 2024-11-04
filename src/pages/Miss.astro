@@ -1,0 +1,225 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Soraka</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>La Cazarrecompensas</h1>
+            <h2>Miss Fortune</h2>
+            <p class="description">Sarah Fortune se cuenta sin duda entre los capitanes más conocidos de Aguas Estancadas y es tan célebre por su apariencia como temida por su ferocidad. Por eso despunta entre los criminales más peligrosos de esta ciudad portuaria. De niña, presenció cómo Gangplank, el rey de los piratas, asesinaba a su familia, una situación de la que se vengó salvajemente años después al hacer saltar por los aires su buque insignia con él a bordo. Todo aquel que la subestime se enfrentará a un oponente seductor e impredecible... y, seguramente, se lleve un par de agujeros de bala de regalo.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://i.pinimg.com/236x/84/a2/b5/84a2b5ce34cb29d700828287d9048753.jpg" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/2.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fb6f4d62835fa6e7ba97055baab49408c8c89273-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Miss/P.png"
+    img2 = "../Miss/Q.png" 
+    img3 = "../Miss/W.png"
+    img4 = "../Miss/E.png"                     
+    img5 = "../Miss/R.png"
+    video1 = "../Miss/P.mp4"                                           
+    video2 = "../Miss/Q.mp4"                                   
+    video3 = "../Miss/W.mp4"
+    video4 = "../Miss/E.mp4"
+    video5 = "../Miss/R.mp4"
+    descripcion1 ="Miss Fortune inflige daño físico adicional cada vez que golpea con un ataque básico a un nuevo objetivo."
+    descripcion2 = "Miss Fortune dispara una bala a un enemigo que daña a este y a un objetivo que esté detrás. Ambos golpes pueden aplicar los efectos de Cachete."
+    descripcion3 = "Si no la atacan, Miss Fortune recibe velocidad de movimiento de forma pasiva. Esta habilidad puede activarse para aumentar la velocidad de ataque durante un breve periodo de tiempo. Mientras está en enfriamiento, Cachete reduce el enfriamiento restante de Alarde."
+    descripcion4 ="Miss Fortune revela una zona con una lluvia de balas, infligiendo oleadas de daño a los oponentes y ralentizándolos."
+    descripcion5 = "Miss Fortune canaliza una lluvia de balas en un cono frente a ella, infligiendo una gran cantidad de daño a los enemigos. Cada oleada de Lluvia de balas puede asestar impactos críticos."
+    nomb1="DEVORADOR DE ALMAS (Pasiva)"
+    nomb2="GOLPE ADSORBENTE (Q)"
+    nomb3="MARCHITAR (W)"
+    nomb4="FUEGO ESPIRITUAL (E)"
+    nomb5="FURIA DE LAS ARENAS (R)">
+    </Habilidades>
+
+</body>
+</html>
