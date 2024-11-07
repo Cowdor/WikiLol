@@ -14,67 +14,67 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<section class="categories">
-			<div class="category">
+		<section class="categories" id ="categorias">
+			<div class="category" id = "asesinos" data-categoria = "1">
 				<img src="https://pm1.aminoapps.com/6315/81081e2b790a64d77204d524f6839743bc053861_hq.jpg" alt="Asesinos" />
 				<span>ASESINOS</span>
 			</div>
-			<div class="category">
+			<div class="category" id = "luchadores" data-categoria = "2">
 				<img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/profileicon/658.png" alt="Luchadores" />
 				<span>LUCHADORES</span>
 			</div>
-			<div class="category">
+			<div class="category" id = "magos" data-categoria = "3">
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qlzIm4Zcv7ZPUlpgWKBPYhJq7yi2ray0oQ&s" alt="Magos" />
 				<span>MAGOS</span>
 			</div>
-			<div class="category">
+			<div class="category" id = "tiradores" data-categoria = "4">
 				<img src="https://i.pinimg.com/originals/f2/56/65/f25665d9bd979b1c05da04a59fb7d8a7.png" alt="Tiradores" />
 				<span>TIRADORES</span>
 			</div>
-			<div class="category">
+			<div class="category" id = "soportes" data-categoria = "5">
 				<img src="https://i.pinimg.com/236x/84/a2/b5/84a2b5ce34cb29d700828287d9048753.jpg" alt="Soportes" />
 				<span>SOPORTES</span>
 			</div>
-			<div class="category">
+			<div class="category" id = "tanques" data-categoria = "6">
 				<img src="https://pbs.twimg.com/profile_images/1124662429819047938/MY7CkPOI_400x400.png" alt="Tanques" />
 				<span>TANQUES</span>
 			</div>
 		</section>
 
-		<section class="champions">
-			<a href="Zed" class="champion-card">
+		<section class="champions" id = "campeones">
+			<a href="Zed" class="champion-card" data-categoria = "1">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/790ff0f287533f90d2d02132c15f54fb85394fdc-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Zed" />
 				<p>Zed</p>
 			</a>
-			<a href="/Lee_Sin" class="champion-card">
+			<a href="/Lee_Sin" class="champion-card" data-categoria = "2">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ce638264ec40c028d3355852192d8feeb969880e-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Lee Sin" />
 				<p>Lee Sin</p>
 			</a>
-			<a href="/Ryze" class="champion-card">
+			<a href="/Ryze" class="champion-card" data-categoria = "3">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e6b174c92f96fb06842f4aac2e417d0e27707c27-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Ryze" />
 				<p>Ryze</p>
 			</a>
-			<a href="/Jhin" class="champion-card">
+			<a href="/Jhin" class="champion-card" data-categoria = "4">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/c7bcc3ab59371041a1035c0447fba1b4d3253d9e-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Jhin" />
 				<p>Jhin</p>
 			</a>
-			<a href="/Soraka" class="champion-card">
+			<a href="/Soraka" class="champion-card" data-categoria = "5">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8a422facc9a83803afca14623ec9da507e07ee35-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Soraka" />
 				<p>Soraka</p>
 			</a>
-			<a href="/Sion" class="champion-card">
+			<a href="/Sion" class="champion-card" data-categoria = "6">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/523fbe02a6445674f3c7f8895e7433ede0e7fbdf-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
 				<p>Sion</p>
 			</a>
-			<a href="/Nasus" class="champion-card">
+			<a href="/Nasus" class="champion-card" data-categoria = "2">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7ad20e92d0da55bcf2fca1a342774841bfa65383-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
 				<p>Nasus</p>
 			</a>
-			<a href="/Miss" class="champion-card">
+			<a href="/Miss" class="champion-card" data-categoria = "4">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/fb6f4d62835fa6e7ba97055baab49408c8c89273-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
 				<p>Miss Fortune</p>
 			</a>
-			<a href="/Galio" class="champion-card">
+			<a href="/Galio" class="champion-card" data-categoria = "6">
 				<img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/28f2a8ca2e4422674275c5e2d077d6cb4f143d0c-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Sion" />
 				<p>Galio</p>
 			</a>
@@ -238,6 +238,30 @@ import Layout from '../layouts/Layout.astro';
 		color: white;
 	}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Seleccionar todos los elementos de categoría y los campeones
+  const categoryElements = document.querySelectorAll<HTMLElement>('#categorias .category');
+  const champions = document.querySelectorAll<HTMLElement>('#campeones .champion-card');
+
+  categoryElements.forEach(category => {
+    category.addEventListener('click', function () {
+      const selectedCategory = category.getAttribute('data-categoria');
+
+      champions.forEach(champion => {
+        // Mostrar solo los campeones que coinciden con la categoría seleccionada
+        if (champion.getAttribute('data-categoria') === selectedCategory) {
+          champion.style.display = 'block';
+        } else {
+          champion.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+  
 
 
 
