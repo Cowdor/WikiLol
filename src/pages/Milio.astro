@@ -1,0 +1,239 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Milio</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>la Llama Serena</h1>
+            <h2>Milio</h2>
+            <p class="description">Milio es un jovencito amable de Ixtal que, a pesar de su corta edad, ha conseguido dominar el axioma ígneo y ha descubierto las llamas de la calma. Con este nuevo poder, Milio pretende ayudar a su familia y poner fin a su exilio uniéndose a los Yun Tal, como ya hiciese antaño su abuela. Después de atravesar las junglas de Ixtal hasta llegar a la capital de Ixaocan, Milio ahora se prepara para enfrentarse al Vidalion y unirse a los Yun Tal, sin ser consciente de las pruebas y los peligros que le aguardan.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://i.pinimg.com/236x/84/a2/b5/84a2b5ce34cb29d700828287d9048753.jpg" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/28bcae8793c10de4c2e0fc85ff71b10d6d880d74-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Milio/P.png"
+    img2 = "../Milio/Q.png"
+    img3 = "../Milio/W.png"
+    img4 = "../Milio/E.png"
+    img5 = "../Milio/R.png"
+    video1 = "../Milio/P.mp4"
+    video2 = "../Milio/Q.mp4"
+    video3 = "../Milio/W.mp4"
+    video4 = "../Milio/E.mp4"
+    video5 = "../Milio/R.mp4"
+    descripcion1 = "Las habilidades de Milio hechizan a sus aliados al tocarlos, lo que hace que la próxima vez que inflijan daño también generen una explosión de daño adicional y quemen a su objetivo."
+    descripcion2 = "Patea una bola que empuja a un enemigo. La bola sale disparada hacia arriba y cae sobre el enemigo, lo que inflige daño y ralentiza a los enemigos de la zona al impactar."
+    descripcion3 = "Crea un área de potenciación que cura a los aliados y aumenta el alcance de quienes se encuentran en su interior. El área sigue al aliado más cercano al punto de lanzamiento."
+    descripcion4 = "Milio lanza un escudo a un aliado, lo que aumenta temporalmente su velocidad de movimiento. Esta habilidad tiene 2 cargas."
+    descripcion5 = "Milio lanza una ola de llamas reconfortantes que cura y elimina los efectos de control de adversario de los aliados que se encuentren a su alcance."
+    nomb1="¡AL CALORCITO! (P)"
+    nomb2="ULTRAMEGAPATADA ARDIENTE (Q)"
+    nomb3="HOGUERA RECONFORTANTE (W)"
+    nomb4="ABRAZOS CÁLIDOS (E)"
+    nomb5="ALIENTO VITAL (R)">
+    </Habilidades>
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Milio/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Caitlyn</title>
+    <style>
+        /* Habilidades */
+.abilities-section {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(59, 65, 81, 0.9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Ajuste para centrar cada habilidad */
+.ability-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-top: 30px;
+}
+
+.ability {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Para apilar imagen, video y texto verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Ajustes para centrar imagenes y videos */
+.ability img, .ability video {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px 0; /* Espaciado entre la imagen/video y el texto */
+    border-radius: 10px;
+}
+
+.ability-details {
+    text-align: center; /* Asegura que el texto quede centrado */
+}
+
+.ability-details h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ffd700;
+}
+
+.ability-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>La Sheriff de Piltover</h1>
+            <h2>Caitlyn</h2>
+            <p class="description">Reconocida como su mejor pacificadora, Caitlyn es también la mejor arma de Piltover para librar a la ciudad de sus elusivos elementos criminales. A menudo trabaja con Vi, y actúa como un frío y eficiente contrapunto para la naturaleza más impetuosa de su socia. A pesar de que lleva un rifle hextech único, el arma más poderosa de Caitlyn es su inteligencia superior, lo que le permite colocar trampas elaboradas para cualquier infractor de la ley lo suficientemente necio como para operar en la Ciudad del Progreso.</p>
+            
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://i.pinimg.com/originals/f2/56/65/f25665d9bd979b1c05da04a59fb7d8a7.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/33eb2887813cb07d3b708800b93097a02182e98b-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Caitlyn/P.png"
+    img2 = "../Caitlyn/Q.png"
+    img3 = "../Caitlyn/W.png"
+    img4 = "../Caitlyn/E.png"
+    img5 = "../Caitlyn/R.png"
+    video1 = "../Caitlyn/P.mp4"
+    video2 = "../Caitlyn/Q.mp4"
+    video3 = "../Caitlyn/W.mp4"
+    video4 = "../Caitlyn/E.mp4"
+    video5 = "../Caitlyn/R.mp4"
+    descripcion1 = "Cada pocos ataques básicos o contra un objetivo atrapado en una de sus trampas o en su red, Caitlyn realiza un tiro a la cabeza que inflige daño adicional, el cual aumenta con su probabilidad de crítico. El alcance de Disparo a la cabeza de Caitlyn se duplica cuando ataca a objetivos atrapados en una trampa o una red."
+    descripcion2 = "Caitlyn carga su rifle durante 1 s para liberar un disparo penetrante que provoca daño físico y se ensancha al alcanzar a un objetivo (causa menos daño a los objetivos posteriores)."
+    descripcion3 = "Caitlyn pone una trampa que, al activarse, inmoviliza al campeón enemigo y lo revela durante 1,5 s, lo que permite que Caitlyn aseste un Disparo a la cabeza potenciado."
+    descripcion4 = "Caitlyn lanza una red pesada para ralentizar a su objetivo. El retroceso empuja hacia atrás a Caitlyn."
+    descripcion5 = "Caitlyn se toma su tiempo para preparar el tiro perfecto, causando una gran cantidad de daño a un solo objetivo a gran distancia. Los campeones enemigos pueden interceptar la bala para sus aliados."
+    nomb1="DISPARO A LA CABEZA (P)"
+    nomb2="PACIFICADORA DE PILTOVER (Q)"
+    nomb3="TRAMPA PARA YORDLES (W)"
+    nomb4="RED DE CALIBRE 90 (E)"
+    nomb5="AS EN LA MANGA (R)">
+    </Habilidades>
+
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Caitlyn/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div>
+</body>
+</html>

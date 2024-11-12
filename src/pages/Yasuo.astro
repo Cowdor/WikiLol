@@ -1,0 +1,240 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Yasuo</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>La Espada sin Honor</h1>
+            <h2>Yasuo</h2>
+            <p class="description">Yasuo, un intrépido jonio con una fuerza de voluntad inquebrantable, es también un hábil espadachín capaz de controlar el viento y utilizarlo contra sus enemigos. Siendo un joven orgulloso fue injustamente acusado de asesinar a su maestro. Incapaz de demostrar su inocencia, se vio obligado a acabar con la vida de su propio hermano en defensa propia. Incluso después de que el verdadero asesino de su maestro saliera a la luz, Yasuo no ha podido perdonarse a sí mismo por todo lo que ha hecho y ahora deambula por su tierra natal con el viento como único guía de su espada.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/profileicon/658.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/5.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bdbed4e6ca66f10b86f4dbc41db2d5c066ab9168-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+
+    <Habilidades 
+    img1 = "../Yasuo/P.png"
+    img2 = "../Yasuo/Q.png"
+    img3 = "../Yasuo/W.png"
+    img4 = "../Yasuo/E.png"
+    img5 = "../Yasuo/R.png"
+    video1 = "../Yasuo/P.mp4"
+    video2 = "../Yasuo/Q.mp4"
+    video3 = "../Yasuo/W.mp4"
+    video4 = "../Yasuo/E.mp4"
+    video5 = "../Yasuo/R.mp4"
+    descripcion1 ="Aumenta la probabilidad de impacto crítico de Yasuo. Además, Yasuo va acumulando su escudo mientras se mueve. El escudo se activa cuando recibe daño de un campeón o monstruo."
+    descripcion2 = "Lanza una estocada al frente que inflige daño a los enemigos en una línea. Al golpear, otorga una acumulación de Tormenta inminente durante unos cuantos segundos. Con 2 acumulaciones, Tempestad de acero inicia un remolino que lanza al objetivo por el aire. Tempestad de acero se comporta como un ataque básico y progresa del mismo modo."
+    descripcion3 = "Crea un muro móvil que bloquea todos los proyectiles enemigos durante 4 s."
+    descripcion4 ="Se desliza a través del enemigo seleccionado, al que inflige daño mágico. Cada vez que se usa, aumenta el daño del siguiente uso hasta alcanzar un máximo. No se puede emplear más de una vez contra el mismo enemigo durante unos cuantos segundos. Si Tempestad de acero se utiliza durante un deslizamiento, golpeará de forma circular."
+    descripcion5 = "Yasuo aparece junto al campeón enemigo que esté en el aire y le inflige daño físico. Además, todos los enemigos que estén en el aire permanecen suspendidos. Otorga flujo máximo, pero reinicia todas las acumulaciones de Tormenta inminente. Después, durante un breve periodo de tiempo, los golpes críticos de Yasuo obtienen una cantidad importante de penetración de armadura adicional."
+    nomb1="CAMINO DEL ALMA ERRANTE (P)"
+    nomb2="TEMPESTAD DE ACERO (Q)"
+    nomb3="MURO DE VIENTO (W)"
+    nomb4="HOJA CORTANTE (E)"
+    nomb5="ÚLTIMO ALIENTO (R)">
+    </Habilidades>
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Yasuo/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div>    
+</body>
+</html>

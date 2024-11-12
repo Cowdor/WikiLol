@@ -9,6 +9,55 @@ import Habilidades from "../components/Habilidad.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página del Campeón - Jhin</title>
     <style>
+        /* Habilidades */
+.abilities-section {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(59, 65, 81, 0.9);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Ajuste para centrar cada habilidad */
+.ability-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-top: 30px;
+}
+
+.ability {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Para apilar imagen, video y texto verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Ajustes para centrar imagenes y videos */
+.ability img, .ability video {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px 0; /* Espaciado entre la imagen/video y el texto */
+    border-radius: 10px;
+}
+
+.ability-details {
+    text-align: center; /* Asegura que el texto quede centrado */
+}
+
+.ability-details h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ffd700;
+}
+
+.ability-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #f0f0f0;
+}
         /* Tu CSS permanece igual */
         body {
             font-family: Arial, sans-serif;
@@ -133,7 +182,7 @@ import Habilidades from "../components/Habilidad.astro";
         <div class="left-content">
             <h1>El Virtuoso</h1>
             <h2>Jhin</h2>
-            <p class="description">Soraka, una nómada proveniente de las dimensiones celestiales más allá del monte Targon, dejó a un lado su inmortalidad para proteger a las razas mortales de sus propios instintos asesinos. Su cometido es difundir las virtudes de la compasión y la misericordia entre todos los seres con los que se cruza, e incluso sanar a aquellos que desean hacerle daño. Pese a los problemas que ha presenciado Soraka hasta la fecha, sigue creyendo firmemente que los pueblos de Runaterra no han alcanzado todo su potencial.</p>
+            <p class="description">Jhin es un meticuloso criminal psicópata que ve el asesinato como arte. Otrora prisionero jonio, fue liberado gracias a los sombríos tejemanejes del consejo de Jonia. Ahora, el asesino en serie trabaja como sicario de la secta. Con su pistola como pincel, la obra de Jhin muestra un arte brutal, tanto para las víctimas como para los espectadores. Encuentra un cruel placer en la escenificación atroz, lo cual lo convierte en un candidato sin igual para mandar el más poderoso de los mensajes: el terror.</p>
             
             <div class="info-icons">
                 <div class="icon-box">
@@ -170,12 +219,26 @@ import Habilidades from "../components/Habilidad.astro";
     descripcion3 = "Jhin blande su bastón y dispara un proyectil con un alcance increíble. Atraviesa a los súbditos y los monstruos, pero se detiene en el primer campeón impactado. El objetivo queda inmovilizado si ha sido víctima de los ataques de los aliados de Jhin, de las trampas de loto o del daño de Jhin."
     descripcion4 ="Jhin coloca una trampa de loto invisible que florece al pasar sobre ella. Ralentiza a los enemigos cercanos antes de infligir daño con una explosión de pétalos serrados. Belleza en la muerte: Cuando Jhin mate a un campeón enemigo, florecerá una trampa de loto junto a su cadáver."
     descripcion5 = "Jhin concentra su energía y transforma Susurro en un megacañón de hombro capaz de realizar 4 superdisparos de gran alcance, que atraviesan a los súbditos y a los monstruos pero se detienen en el primer campeón impactado. Susurro incapacita a los enemigos impactados, los ralentiza e inflige daño de ejecución. El cuarto disparo se prepara con sumo cuidado, tiene una potencia épica y garantiza un impacto crítico"
-    nomb1="SUSURRO (Pasiva)"
+    nomb1="SUSURRO (P)"
     nomb2="GRANADA DANZANTE (Q)"
     nomb3="FLORECER MORTAL (W)"
     nomb4="PÚBLICO ENTREGGADO (E)"
     nomb5="ABAJO EL TELÓN (R)">
     </Habilidades>
-
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Jhin/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div>    
 </body>
 </html>

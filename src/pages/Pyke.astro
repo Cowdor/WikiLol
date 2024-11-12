@@ -1,0 +1,239 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Pyke</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>el Destripador de los Puertos</h1>
+            <h2>Pyke</h2>
+            <p class="description">A Pyke, un conocido arponero de los muelles del matadero de Aguas Estancadas, le esperaba la muerte en el estómago de una gigantesca criatura marina... y sin embargo, regresó. Desde entonces acecha en los fríos y húmedos callejones y caminos de la que fue su ciudad natal, donde usa sus dones sobrenaturales para dar una rápida y truculenta muerte a quienes se ganan la vida explotando a otros. Cómo son las cosas: una ciudad que se enorgullece de cazar monstruos ahora tiene un monstruo que caza a sus habitantes.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://pm1.aminoapps.com/6315/81081e2b790a64d77204d524f6839743bc053861_hq.jpg" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://www.cumbresviajes.com/assets/templates/img/plantillas/3.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/26db5e36b7212a5a6ea48ac39d5a686610332a43-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Pyke/P.png"
+    img2 = "../Pyke/Q.png"
+    img3 = "../Pyke/W.png"
+    img4 = "../Pyke/E.png"
+    img5 = "../Pyke/R.png"
+    video1 = "../Pyke/P.webm"
+    video2 = "../Pyke/Q.webm"
+    video3 = "../Pyke/W.webm"
+    video4 = "../Pyke/E.webm"
+    video5 = "../Pyke/R.webm"
+    descripcion1 ="Cuando Pyke se oculta de los enemigos, regenera el daño que haya sufrido recientemente de campeones. Además, en vez de obtener vida máxima extra de cualquier tipo, gana DA adicional."
+    descripcion2 = "Pyke apuñala a un enemigo que tenga delante o lo arrastra hacia él."
+    descripcion3 = "Pyke entra en estado de camuflaje y obtiene una buena cantidad de velocidad de movimiento que disminuye a lo largo del tiempo."
+    descripcion4 ="Pyke se desliza y deja un espíritu tras él que, cuando vuelve a su cuerpo, aturde a los campeones enemigos que encuentra a su paso."
+    descripcion5 = "Pyke aparece junto a enemigos con poca vida y los ejecuta, lo que le permite lanzar de nuevo su hechizo y otorgar oro adicional al aliado que le asista."
+    nomb1="BENDICIÓN DE LOS AHOGADOS (P)"
+    nomb2="ESPETÓN DE HUESOS (Q)"
+    nomb3="INMERSIÓN ESPECTROMARINA (W)"
+    nomb4="CORRIENTE FANTASMA (E)"
+    nomb5="MUERTE DE LAS PROFUNDIDADES (R)">
+    </Habilidades>
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Pyke/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div> 
+</body>
+</html>

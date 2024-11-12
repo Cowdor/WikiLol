@@ -1,0 +1,239 @@
+---
+import Habilidades from "../components/Habilidad.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Campeón - Malphite</title>
+    <style>
+        /* Tu CSS permanece igual */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://esportsbureau.com/wp-content/uploads/2024/09/1920x1080-league-of-legends-background-m54i08fbn7lnv13f.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(10, 20, 40, 255);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left-content {
+            width: 65%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #c8aa6efe;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2rem;
+        }
+
+        .right-image {
+            width: 30%;
+        }
+
+        .right-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .info-icons .icon-box {
+            text-align: center;
+            margin: 0 50px;
+        }
+
+        .info-icons img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-icons p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Habilidades */
+        .abilities-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(59, 65, 81, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .ability-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .ability {
+            text-align: left;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ability img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .ability-details {
+            flex-grow: 1;
+        }
+
+        .ability-details h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+
+        .ability-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #f0f0f0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content {
+                width: 100%;
+            }
+
+            .right-image {
+                width: 100%;
+            }
+
+            .right-image img {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+
+            .ability {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .ability img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/"
+        <button> <img src="../flecha.png" width="35px"  ></button>
+        </a>
+        <div class="left-content">
+            <h1>El Fragmento del Monolito</h1>
+            <h2>Malphite</h2>
+            <p class="description">Como una criatura enorme de piedra viviente, a Malphite le cuesta imponer el orden en un mundo caótico. Creado como sirviente de fragmentos de un obelisco sobrenatural conocido como el Monolito, usó su increíble fuerza elemental para mantener y proteger a su progenitor, pero acabó por fracasar en su labor. El único superviviente de la destrucción ahora padece a los blandengues de Runaterra y sus naturalezas fluidas, mientras se esfuerza en buscar un nuevo rol digno del último de los de su especie.</p>
+
+            <div class="info-icons">
+                <div class="icon-box">
+                    <img src="https://pbs.twimg.com/profile_images/1124662429819047938/MY7CkPOI_400x400.png" alt="Rol">
+                    <p>Rol</p>
+                </div>
+                <div class="icon-box">
+                    <img src="https://cdn.goconqr.com/uploads/media/image/19744745/desktop_d646a3b1-7e07-4bf2-8b7a-bef9a39dc9c1.png" alt="Dificultad">
+                    <p>Dificultad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-image">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/afe536f3bd50d6f4862cc62dda9df824190a46f3-496x560.jpg?auto=format&fit=fill&q=80&w=352" alt="Imagen del Campeón">
+        </div>
+    </div>
+
+    <!-- Sección de Habilidades -->
+    <Habilidades 
+    img1 = "../Malphite/P.png"
+    img2 = "../Malphite/Q.png"
+    img3 = "../Malphite/W.png"
+    img4 = "../Malphite/E.png"
+    img5 = "../Malphite/R.png"
+    video1 = "../Malphite/P.mp4"
+    video2 = "../Malphite/Q.mp4"
+    video3 = "../Malphite/W.mp4"
+    video4 = "../Malphite/E.mp4"
+    video5 = "../Malphite/R.mp4"
+    descripcion1 = "Malphite queda protegido por una envoltura de piedra que absorbe daño hasta un máximo del 10% de su vida máxima. Si no recibe daño durante unos segundos el efecto se reinicia."
+    descripcion2 = "Malphite lanza un fragmento de tierra por el suelo hacia su enemigo. Además de causarle daño, le roba velocidad de movimiento durante 3 s."
+    descripcion3 = "Malphite ataca con tal fuerza que crea una explosión sónica. Durante los próximos segundos, sus ataques crean seísmos frente a él."
+    descripcion4 = "Malphite golpea el suelo y provoca una onda de choque que inflige daño mágico en función de su armadura y reduce la velocidad de ataque de los enemigos durante un breve periodo de tiempo."
+    descripcion5 = "Malphite se lanza hacia una ubicación a gran velocidad, inflige daño a los enemigos y los lanza por los aires."
+    nomb1="ESCUDO DE GRANITO (P)"
+    nomb2="FRAGMENTO SÍSMICO (Q)"
+    nomb3="ATRONAR (W)"
+    nomb4="GOLPE EN EL SUELO (E)"
+    nomb5="FUERZA IMPARABLE (R)">
+    </Habilidades>
+<div class="container">
+        <!-- Contenido existente -->
+    
+        <!-- Nueva sección para Runas y Build -->
+        <div class="extras-section">
+            <div class="left-extra">
+                <h2>Runas</h2>
+                <img src="../Malphite/Runa.png" alt="Imagen de Runas" class="extra-image">
+            </div>
+            <div class="right-extra">
+                <h2>Build</h2>
+                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
+            </div>
+        </div>
+</div>   
+</body>
+</html>
