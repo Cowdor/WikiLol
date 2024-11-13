@@ -1,5 +1,6 @@
 ---
 import Habilidades from "../components/Habilidad.astro";
+import Runas from "../components/runas.astro";
 ---
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@ import Habilidades from "../components/Habilidad.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página del Campeón - Ryze</title>
     <style>
-        /* Tu CSS permanece igual */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -198,7 +199,6 @@ import Habilidades from "../components/Habilidad.astro";
     </div>
 
     <!-- Sección de Habilidades -->
-
     <Habilidades 
     img1 = "../Ryze/P.png"
     img2 = "../Ryze/Q.png"
@@ -219,22 +219,10 @@ import Habilidades from "../components/Habilidad.astro";
     nomb2="IDESCARGA ELÉCTRICA (Q)"
     nomb3="PRISIÓN RÚNICA (W)"
     nomb4="TORMENTA ELÉCTRICA (E)"
-    nomb5="DISTORSIÓN DE REÍNOS (R)">
+    nomb5="DISTORSIÓN DE REÍNOS (R)"
+    imgr = "../Ryce/Runa.png"
+    imgb = "../Ryce/build.png">
     </Habilidades>
-<div class="container">
-        <!-- Contenido existente -->
-    
-        <!-- Nueva sección para Runas y Build -->
-        <div class="extras-section">
-            <div class="left-extra">
-                <h2>Runas</h2>
-                <img src="../Ryze/Runa.png" alt="Imagen de Runas" class="extra-image">
-            </div>
-            <div class="right-extra">
-                <h2>Build</h2>
-                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
-            </div>
-        </div>
-</div>    
+  
 </body>  
 </html>

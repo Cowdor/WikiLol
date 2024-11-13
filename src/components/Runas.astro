@@ -1,0 +1,42 @@
+---
+const {imgr, imgb} = Astro.props
+---
+
+<style>
+
+.container {
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      padding: 30px;
+      background-color: rgba(10, 20, 40, 255);
+      border-radius: 15px;
+      text-align: center;
+  }
+
+  .extra-section {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+</style>
+
+<div class="container">
+    <!-- Nueva sección para Runas y Build -->
+    <div class="extras-section">
+        <div class="left-extra">
+            <h2>Runas</h2>
+            <img src={imgr} alt="Imagen de Runas" class="extra-image">
+        </div>
+        <div class="right-extra">
+            <h2>Build</h2>
+            <img src={imgb} alt="Imagen de Build" class="extra-image">
+        </div>
+    </div>
+</div>  

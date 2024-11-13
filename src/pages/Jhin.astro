@@ -1,5 +1,6 @@
 ---
 import Habilidades from "../components/Habilidad.astro";
+import Runas from "../components/runas.astro";
 ---
 
 <!DOCTYPE html>
@@ -8,6 +9,7 @@ import Habilidades from "../components/Habilidad.astro";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página del Campeón - Jhin</title>
+
     <style>
         /* Habilidades */
 .abilities-section {
@@ -58,7 +60,7 @@ import Habilidades from "../components/Habilidad.astro";
     font-size: 1rem;
     color: #f0f0f0;
 }
-        /* Tu CSS permanece igual */
+    
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -223,22 +225,11 @@ import Habilidades from "../components/Habilidad.astro";
     nomb2="GRANADA DANZANTE (Q)"
     nomb3="FLORECER MORTAL (W)"
     nomb4="PÚBLICO ENTREGGADO (E)"
-    nomb5="ABAJO EL TELÓN (R)">
+    nomb5="ABAJO EL TELÓN (R)"
+    imgr = "../Jhin/Runa.png"
+    imgb = "../Jhin/build.png">
     </Habilidades>
-<div class="container">
-        <!-- Contenido existente -->
-    
-        <!-- Nueva sección para Runas y Build -->
-        <div class="extras-section">
-            <div class="left-extra">
-                <h2>Runas</h2>
-                <img src="../Jhin/Runa.png" alt="Imagen de Runas" class="extra-image">
-            </div>
-            <div class="right-extra">
-                <h2>Build</h2>
-                <img src="URL_DE_LA_IMAGEN_DE_BUILD" alt="Imagen de Build" class="extra-image">
-            </div>
-        </div>
-</div>    
+
+
 </body>
 </html>

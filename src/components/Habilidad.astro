@@ -1,9 +1,32 @@
 ---
-const {nomb1, nomb2, nomb3, nomb4, nomb5, descripcion1, descripcion2, descripcion3, descripcion4, descripcion5, video1, video2, video3, video4, video5, img1, img2, img3, img4, img5} = Astro.props
+const {nomb1, nomb2, nomb3, nomb4, nomb5, descripcion1, descripcion2, descripcion3, descripcion4, descripcion5, video1, video2, video3, video4, video5,
+img1, img2, img3, img4, img5, imgr, imgb} = Astro.props
 ---
 
 <style>
   /* Tu CSS permanece igual */
+  .container {
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      padding: 30px;
+      background-color: rgba(10, 20, 40, 255);
+      border-radius: 15px;
+      text-align: center;
+  }
+
+  .extra-section {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 70px;
+      margin-right: 70px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+
   body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -167,6 +190,33 @@ const {nomb1, nomb2, nomb3, nomb4, nomb5, descripcion1, descripcion2, descripcio
           text-align: center;
       }
   }
+
+  .container {
+    max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    text-align: center;
+}
+
+
+.extras-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Espacio entre las imágenes */
+}
+
+.left-extra, .right-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra-image {
+    width: 750px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+}
+
+
 </style>  
 
 
@@ -247,6 +297,21 @@ const {nomb1, nomb2, nomb3, nomb4, nomb5, descripcion1, descripcion2, descripcio
           <p id="descripcion">{descripcion5}</p>
       </div>
   </div>
+
+  
+<div class="container">
+    <!-- Nueva sección para Runas y Build -->
+    <div class="extras-section">
+        <div class="left-extra">
+            <h2>Runas</h2>
+            <img src={imgr} alt="Imagen de Runas" class="extra-image">
+        </div>
+        <div class="right-extra">
+            <h2>Build</h2>
+            <img src={imgb} alt="Imagen de Build" class="extra-image">
+        </div>
+    </div>
+</div>  
 
 
 
